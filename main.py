@@ -3,6 +3,7 @@ from faker import Faker
 import random
 
 app = FastAPI()
+fake = Faker('pt_BR')
 
 @app.get("/")
 async def root():
